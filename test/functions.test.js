@@ -138,7 +138,7 @@ describe('We want to detect column wins for O as well:', () => {
 });
 
 describe('We want to detect diagonal wins:', () => {
-    it('O wins when the board is:\n' + 
+    it('X wins when the board is:\n' + 
        'X--\n' +
        '-X-\n' +
        '--X', () => {
@@ -147,5 +147,15 @@ describe('We want to detect diagonal wins:', () => {
         board = place(board, 'X', 1, 1);
         board = place(board, 'X', 2, 2);
         expect(detectWin(board, 'X')).toBe(true);
+    });
+    it('O wins when the board is:\n' + 
+       '--O\n' +
+       '-O-\n' +
+       'O--', () => {
+        var board = createBoard();
+        board = place(board, 'O', 0, 2);
+        board = place(board, 'O', 1, 1);
+        board = place(board, 'O', 2, 0);
+        expect(detectWin(board, 'O')).toBe(true);
     });
 });
