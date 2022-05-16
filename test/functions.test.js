@@ -202,6 +202,10 @@ describe('We want to detect diagonal wins:', () => {
     });
 });
 
+describe('Name of the group', () => {
+    
+});
+
 describe('Check for the UAT scenarios', () => {
     it('With UAT scenario 2 X should win, and O should not:\n' + 
     'X--\n' +
