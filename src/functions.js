@@ -32,8 +32,11 @@ function detectWin(board, marker) {
             board[2][column] == marker) return true;
     }
 
-    if (board[0][0] == marker && board[0][1] == marker && board[0][2] == marker)
-        return true;
+    for (let row = 0; row < 3; row++) {
+        if (board[row][0] == marker && board[row][1] == marker && board[row][2] == marker)
+            return true;
+    }
+    
     return false
 }
 
