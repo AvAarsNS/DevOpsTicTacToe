@@ -18,7 +18,7 @@ function place(board, marker, row, column) {
 }
 
 function detectWin(board) {
-    return true;
+    return false;
 }
 
 module.exports = {
