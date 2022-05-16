@@ -57,9 +57,15 @@ Then, we want to check the UAT 3 and 4:
 To detect draws, we want to be able to detect if all fields are filled:
 ✔ Empty board: not filled
 ✔ Almost filled board: not filled
-- Filled board: yes!
+✔ Filled board: yes!
 
 ## Final pomodoro:
 Continue with the draw tests above, then be able to format the board with players in it
 Then be able to select the next player
 Then finally, be able to run the game
+
+- Test with UAT 5
+
+We want to be able to format the board:
+- Test with UAT 3
+- Test with UAT 5
