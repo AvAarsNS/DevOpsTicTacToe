@@ -92,4 +92,24 @@ describe('We want to detect X wins in other columns:', () => {
         board = place(board, 'X', 2, 1);
         expect(detectColumnWin(board)).toBe(true);
     });
+    it('We win when the board is:\n' + 
+       '--X\n' +
+       '--X\n' +
+       '--X', () => {
+        var board = createBoard();
+        board = place(board, 'X', 0, 2);
+        board = place(board, 'X', 1, 2);
+        board = place(board, 'X', 2, 2);
+        expect(detectColumnWin(board)).toBe(true);
+    });
+    it('We don\'t win when the board is:\n' + 
+       '--X\n' +
+       '-X-\n' +
+       '--X', () => {
+        var board = createBoard();
+        board = place(board, 'X', 0, 2);
+        board = place(board, 'X', 1, 1);
+        board = place(board, 'X', 2, 2);
+        expect(detectColumnWin(board)).toBe(false);
+    });
 });

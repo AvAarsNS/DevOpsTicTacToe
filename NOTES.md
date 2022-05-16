@@ -25,6 +25,9 @@ First we want to detect an X win in the first column:
 ✔ Three Xes below eachother: Win!
 
 We also want to detect other column X wins:
-- Three Xes in the second row: win
-- Three Xes in the third row: win
-- Two Xes in the third row and one in the second row: no win
+✔ Three Xes in the second row: win
+✔ Three Xes in the third row: win
+✔ Two Xes in the third row and one in the second row: no win
+
+We want to detect column wins for O:
+✴ Three O's in the second row: win
