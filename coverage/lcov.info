@@ -2,12 +2,12 @@ TN:
 SF:src\functions.js
 FN:1,createBoard
 FN:7,formatBoard
-FN:15,placeX
+FN:15,place
 FNF:3
 FNH:3
 FNDA:6,createBoard
 FNDA:1,formatBoard
-FNDA:4,placeX
+FNDA:4,place
 DA:2,6
 DA:8,1
 DA:16,4

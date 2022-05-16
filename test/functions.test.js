@@ -1,4 +1,4 @@
-const {createBoard, formatBoard, placeX} = require('../src/functions');
+const {createBoard, formatBoard, place} = require('../src/functions');
 
 describe('We start with an empty board', () => {
     it('We should be able to create... ', () => {
@@ -19,17 +19,17 @@ describe('We start with an empty board', () => {
 describe('We want to be able to place Xes', () => {
     it('First in the top left', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 0, 0);
+        const boardAfterPlacing = place(board, 'X', 0, 0);
         expect(boardAfterPlacing).toStrictEqual([['X',null,null],[null,null,null],[null,null,null]])
     });
     it('Then in the top center', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 0, 1);
+        const boardAfterPlacing = place(board, 'X', 0, 1);
         expect(boardAfterPlacing).toStrictEqual([[null,'X',null],[null,null,null],[null,null,null]])
     });
     it('And finally in the bottom right', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 2, 2);
+        const boardAfterPlacing = place(board, 'X', 2, 2);
         expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,null,null],[null,null,'X']])
     });
 });
@@ -37,7 +37,7 @@ describe('We want to be able to place Xes', () => {
 describe('And we want to be able to place Os', () => {
     it('We just place one in the center', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 1, 1);
+        const boardAfterPlacing = place(board, 'O', 1, 1);
         expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,'O',null],[null,null,null]])
     });
 });

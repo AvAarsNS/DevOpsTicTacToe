@@ -12,13 +12,13 @@ function formatBoard(board) {
            ' | | '
 }
 
-function placeX(board, row, column) {
-    board[row][column] = 'X';
+function place(board, marker, row, column) {
+    board[row][column] = marker;
     return board;
 }
 
 module.exports = {
     createBoard,
     formatBoard,
-    placeX
+    place
 }
