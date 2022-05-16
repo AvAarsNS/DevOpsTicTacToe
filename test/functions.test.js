@@ -145,7 +145,7 @@ describe('We want to detect horizontal wins:', () => {
         var board = createBoard();
         board = place(board, 'X', 0, 0);
         board = place(board, 'X', 0, 2);
-        expect(detectWin(board, 'X')).toBe(true);
+        expect(detectWin(board, 'X')).toBe(false);
     });
 });
 
