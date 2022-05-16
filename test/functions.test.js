@@ -42,7 +42,7 @@ describe('And we want to be able to place Os', () => {
     });
 });
 
-describe('We want to be able to detect column wins', () => {
+describe('We want to be able to detect wins in the first column', () => {
     it('No win when the board is:\n' + 
        'X--\n' +
        '---\n' +
