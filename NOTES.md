@@ -45,7 +45,7 @@ Then, if there is time, move on with the fourth (the logic is already there, oop
 ✔ First, make a scenario for UAT 1
 
 Then we want to check for horizontal wins:
-✴ Two Xes in the first row: no win
-- Three Xes in first row: win
+✔ Two Xes in the first row: no win
+✔ Three Xes in first row: win
 - Three Xes in second row: win
 - Three O's in third row: win
