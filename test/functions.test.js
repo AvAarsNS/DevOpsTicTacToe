@@ -1,4 +1,4 @@
-const {createBoard, formatBoard, place, detectColumnWin} = require('../src/functions');
+const {createBoard, formatBoard, place, detectWin} = require('../src/functions');
 
 describe('We start with an empty board', () => {
     it('We should be able to create... ', () => {
@@ -49,7 +49,7 @@ describe('We want to be able to detect wins in the first column', () => {
        '---', () => {
         var board = createBoard();
         board = place(board, 'X', 0, 0);
-        expect(detectColumnWin(board, 'X')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
     });
     it('No win when the board is:\n' + 
        'X--\n' +
@@ -58,7 +58,7 @@ describe('We want to be able to detect wins in the first column', () => {
         var board = createBoard();
         board = place(board, 'X', 0, 0);
         board = place(board, 'X', 1, 0);
-        expect(detectColumnWin(board, 'X')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
     });
     it('No win when the board is:\n' + 
        'X--\n' +
@@ -67,7 +67,7 @@ describe('We want to be able to detect wins in the first column', () => {
         var board = createBoard();
         board = place(board, 'X', 0, 0);
         board = place(board, 'X', 2, 0);
-        expect(detectColumnWin(board, 'X')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
     });
     it('We win when the board is:\n' + 
        'X--\n' +
@@ -77,7 +77,7 @@ describe('We want to be able to detect wins in the first column', () => {
         board = place(board, 'X', 0, 0);
         board = place(board, 'X', 1, 0);
         board = place(board, 'X', 2, 0);
-        expect(detectColumnWin(board, 'X')).toBe(true);
+        expect(detectWin(board, 'X')).toBe(true);
     });
 });
 
@@ -90,7 +90,7 @@ describe('We want to detect X wins in other columns:', () => {
         board = place(board, 'X', 0, 1);
         board = place(board, 'X', 1, 1);
         board = place(board, 'X', 2, 1);
-        expect(detectColumnWin(board, 'X')).toBe(true);
+        expect(detectWin(board, 'X')).toBe(true);
     });
     it('We win when the board is:\n' + 
        '--X\n' +
@@ -100,7 +100,7 @@ describe('We want to detect X wins in other columns:', () => {
         board = place(board, 'X', 0, 2);
         board = place(board, 'X', 1, 2);
         board = place(board, 'X', 2, 2);
-        expect(detectColumnWin(board, 'X')).toBe(true);
+        expect(detectWin(board, 'X')).toBe(true);
     });
     it('We don\'t win when the board is:\n' + 
        '--X\n' +
@@ -110,7 +110,7 @@ describe('We want to detect X wins in other columns:', () => {
         board = place(board, 'X', 0, 2);
         board = place(board, 'X', 1, 1);
         board = place(board, 'X', 2, 2);
-        expect(detectColumnWin(board, 'X')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
     });
 });
 
@@ -123,7 +123,7 @@ describe('We want to detect column wins for O as well:', () => {
         board = place(board, 'O', 0, 1);
         board = place(board, 'O', 1, 1);
         board = place(board, 'O', 2, 1);
-        expect(detectColumnWin(board, 'O')).toBe(true);
+        expect(detectWin(board, 'O')).toBe(true);
     });
     it('O doesn\'t win when the board is:\n' + 
        '-X-\n' +
@@ -133,6 +133,19 @@ describe('We want to detect column wins for O as well:', () => {
         board = place(board, 'X', 0, 1);
         board = place(board, 'X', 1, 1);
         board = place(board, 'X', 2, 1);
-        expect(detectColumnWin(board, 'O')).toBe(false);
+        expect(detectWin(board, 'O')).toBe(false);
+    });
+});
+
+describe('We want to detect diagonal wins:', () => {
+    it('O wins when the board is:\n' + 
+       'X--\n' +
+       '-X-\n' +
+       '--X', () => {
+        var board = createBoard();
+        board = place(board, 'X', 0, 0);
+        board = place(board, 'X', 1, 1);
+        board = place(board, 'X', 2, 2);
+        expect(detectWin(board, 'X')).toBe(true);
     });
 });

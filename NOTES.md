@@ -31,4 +31,8 @@ We also want to detect other column X wins:
 
 We want to detect column wins for O:
 ✔ Three O's in the second row: win
-✴ Three Xes in the second row: no win for O
+✔ Three Xes in the second row: no win for O
+
+We want to be able to detect diagonal wins for both players:
+✴ Xes top left to bottom right: win
+- O's bottom left to top right: win

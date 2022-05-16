@@ -17,7 +17,7 @@ function place(board, marker, row, column) {
     return board;
 }
 
-function detectColumnWin(board, marker) {
+function detectWin(board, marker) {
     for (let column = 0; column < 3; column++) {
         if (board[0][column] == marker &&
             board[1][column] == marker &&
@@ -30,5 +30,5 @@ module.exports = {
     createBoard,
     formatBoard,
     place,
-    detectColumnWin,
+    detectWin,
 }
