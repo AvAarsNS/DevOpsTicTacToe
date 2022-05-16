@@ -33,3 +33,11 @@ describe('We want to be able to place Xes', () => {
         expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,null,null],[null,null,'X']])
     });
 });
+
+describe('And we want to be able to place Os', () => {
+    it('We just place one in the center', () => {
+        const board = createBoard();
+        const boardAfterPlacing = placeX(board, 1, 1);
+        expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,'O',null],[null,null,null]])
+    });
+});
