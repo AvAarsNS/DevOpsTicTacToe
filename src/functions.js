@@ -18,7 +18,9 @@ function place(board, marker, row, column) {
 }
 
 function detectColumnWin(board) {
-    return false;
+    return board[0][0] == 'X' &&
+           board[1][0] == 'X' &&
+           board[2][0] == 'X';
 }
 
 module.exports = {
