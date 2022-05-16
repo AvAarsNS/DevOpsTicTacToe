@@ -8,6 +8,6 @@ and be able to place a players marker on some squares, maybe all
 ✔ Format an empty game board
 
 Now we want to place an X:
-✴ Place an x in the top left
+✔ Place an x in the top left
 - Place an x in the top center
 - Place an x in the bottom right
