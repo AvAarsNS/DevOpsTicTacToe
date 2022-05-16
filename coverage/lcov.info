@@ -13,7 +13,7 @@ FNDA:3,formatBoard
 FNDA:69,place
 FNDA:35,detectWin
 FNDA:4,boardIsFull
-FNDA:2,nextPlayer
+FNDA:3,nextPlayer
 DA:2,30
 DA:8,3
 DA:10,3
@@ -38,10 +38,12 @@ DA:49,4
 DA:50,9
 DA:51,24
 DA:54,2
-DA:58,2
-DA:61,1
-LF:26
-LH:26
+DA:58,3
+DA:59,1
+DA:60,2
+DA:63,1
+LF:28
+LH:28
 BRDA:12,0,0,27
 BRDA:12,0,1,12
 BRDA:14,1,0,6
@@ -68,6 +70,8 @@ BRDA:41,9,1,29
 BRDA:41,9,2,7
 BRDA:51,10,0,2
 BRDA:51,10,1,22
-BRF:26
-BRH:26
+BRDA:58,11,0,1
+BRDA:58,11,1,2
+BRF:28
+BRH:28
 end_of_record

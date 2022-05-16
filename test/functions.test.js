@@ -346,4 +346,7 @@ describe('Select the next player:', () => {
     it('Previous player X: we select O', () => {
         expect(nextPlayer('X')).toBe('O');
     });
+    it('Previous player O: we select X', () => {
+        expect(nextPlayer('O')).toBe('X');
+    });
 });

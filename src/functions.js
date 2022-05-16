@@ -55,6 +55,8 @@ function boardIsFull(board) {
 }
 
 function nextPlayer(previousPlayer) {
+    if (previousPlayer == 'X')
+        return 'O';
     return 'X';
 }
 
