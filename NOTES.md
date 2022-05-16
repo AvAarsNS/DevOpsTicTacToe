@@ -42,11 +42,10 @@ Allright, I went too fast. Let's first check the second UAT scenario.
 Then move on to horizontal lines, check with the third UAT scenario.
 Then, if there is time, move on with the fourth (the logic is already there, oops)
 
-- First, make a scenario for UAT 1
+✔ First, make a scenario for UAT 1
 
 Then we want to check for horizontal wins:
-- One X: no win
-- Two Xes: no win
+✴ Two Xes in the first row: no win
 - Three Xes in first row: win
 - Three Xes in second row: win
 - Three O's in third row: win
