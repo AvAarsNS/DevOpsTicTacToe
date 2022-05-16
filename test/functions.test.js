@@ -113,3 +113,16 @@ describe('We want to detect X wins in other columns:', () => {
         expect(detectColumnWin(board)).toBe(false);
     });
 });
+
+describe('We want to detect column wins for O as well:', () => {
+    it('O wins when the board is:\n' + 
+       '-O-\n' +
+       '-O-\n' +
+       '-O-', () => {
+        var board = createBoard();
+        board = place(board, 'O', 0, 1);
+        board = place(board, 'O', 1, 1);
+        board = place(board, 'O', 2, 1);
+        expect(detectColumnWin(board)).toBe(true);
+    });
+});
