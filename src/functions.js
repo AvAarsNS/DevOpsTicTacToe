@@ -17,11 +17,11 @@ function place(board, marker, row, column) {
     return board;
 }
 
-function detectColumnWin(board) {
+function detectColumnWin(board, marker) {
     for (let column = 0; column < 3; column++) {
-        if (board[0][column] == 'X' &&
-            board[1][column] == 'X' &&
-            board[2][column] == 'X') return true;
+        if (board[0][column] == marker &&
+            board[1][column] == marker &&
+            board[2][column] == marker) return true;
     }
     return false
 }
