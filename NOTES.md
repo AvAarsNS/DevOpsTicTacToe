@@ -15,3 +15,5 @@ Now we want to place an X:
 And of course, we want to place some O's as well:
 ✔ Place an O in the center of the board
 
+## Second pomodoro:
+Be able to detect column wins, with both players
