@@ -1,4 +1,4 @@
-const {createBoard, formatBoard, place} = require('../src/functions');
+const {createBoard, formatBoard, place, detectWin} = require('../src/functions');
 
 describe('We start with an empty board', () => {
     it('We should be able to create... ', () => {
@@ -40,4 +40,10 @@ describe('And we want to be able to place Os', () => {
         const boardAfterPlacing = place(board, 'O', 1, 1);
         expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,'O',null],[null,null,null]])
     });
+});
+
+describe('We want to be able to detect column wins', () => {
+    var board = createBoard();
+    board = place(board, 'X', 0, 0);
+    expect(detectWin(board)).toBe(false);
 });
