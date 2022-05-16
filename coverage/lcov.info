@@ -7,9 +7,10 @@ FNH:2
 FNDA:2,createBoard
 FNDA:1,formatBoard
 DA:2,2
-DA:11,1
-LF:2
-LH:2
+DA:8,1
+DA:15,1
+LF:3
+LH:3
 BRF:0
 BRH:0
 end_of_record

@@ -5,7 +5,11 @@ function createBoard() {
 }
 
 function formatBoard(board) {
-
+    return ' | | \n' + 
+           '-----\n' +
+           ' | | \n' + 
+           '-----\n' +
+           ' | | '
 }
 
 module.exports = {
