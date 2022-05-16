@@ -327,4 +327,14 @@ describe('We want to format the board:', () => {
                                     'OOO\n' + 
                                     'X  ');
     });
+    it('Format UAT 5', () => {
+        const board = createBoard();
+        board[0] = ['X', 'O', 'X'];
+        board[1] = ['O', 'O', 'X'];
+        board[2] = ['X', 'X', 'O'];
+        const formattedBoard = formatBoard(board);
+        expect(formattedBoard).toBe('XOX\n' + 
+                                    'OOX\n' + 
+                                    'XXO');
+    });
 });
