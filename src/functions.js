@@ -41,6 +41,7 @@ function detectWin(board, marker) {
 }
 
 function boardIsFull(board) {
+    return false
 }
 
 module.exports = {
@@ -48,4 +49,5 @@ module.exports = {
     formatBoard,
     place,
     detectWin,
+    boardIsFull
 }
