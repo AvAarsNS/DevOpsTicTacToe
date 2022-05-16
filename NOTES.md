@@ -34,5 +34,10 @@ We want to detect column wins for O:
 ✔ Three Xes in the second row: no win for O
 
 We want to be able to detect diagonal wins for both players:
-✴ Xes top left to bottom right: win
-- O's bottom left to top right: win
+✔ Xes top left to bottom right: win
+✔ O's bottom left to top right: win
+
+## Third pomodoro:
+Allright, I went too fast. Let's first check the second UAT scenario.
+Then move on to horizontal lines, check with the third UAT scenario.
+Then, if there is time, move on with the fourth (the logic is already there, oops)
