@@ -12,8 +12,8 @@ function formatBoard(board) {
            ' | | '
 }
 
-function placeX(board) {
-    board[0][0] = 'X';
+function placeX(board, position) {
+    board[0][position] = 'X';
     return board;
 }
 
