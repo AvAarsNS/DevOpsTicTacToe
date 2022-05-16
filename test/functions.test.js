@@ -133,6 +133,6 @@ describe('We want to detect column wins for O as well:', () => {
         board = place(board, 'X', 0, 1);
         board = place(board, 'X', 1, 1);
         board = place(board, 'X', 2, 1);
-        expect(detectColumnWin(board, 'O')).toBe(true);
+        expect(detectColumnWin(board, 'O')).toBe(false);
     });
 });
