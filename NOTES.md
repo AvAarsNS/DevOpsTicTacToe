@@ -51,5 +51,5 @@ Then we want to check for horizontal wins:
 ✔ Three O's in third row: win
 
 Then, we want to check the UAT 3 and 4:
-✴ UAT 3
-- UAT 4
+✔ UAT 3
+✴ UAT 4
