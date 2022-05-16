@@ -71,6 +71,6 @@ We want to be able to format the board:
 ✔ Test with UAT 5 (full)
 
 Give next player:
-✴ No input: X
-- X: O
-- O: X
+✔ No input: X
+✔ X: O
+✔ O: X
