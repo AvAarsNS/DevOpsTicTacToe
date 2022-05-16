@@ -41,7 +41,12 @@ function detectWin(board, marker) {
 }
 
 function boardIsFull(board) {
-    return false
+    for (let row = 0; row < 3; row++) {
+        for (let column = 0; column < 3; column++) {
+            if (board[row][column] == null) return false
+        }
+    }
+    return true
 }
 
 module.exports = {
