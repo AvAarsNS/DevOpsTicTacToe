@@ -5,11 +5,16 @@ function createBoard() {
 }
 
 function formatBoard(board) {
-    return ' | | \n' + 
-           '-----\n' +
-           ' | | \n' + 
-           '-----\n' +
-           ' | | '
+    let formattedBoard = '';
+
+    for (let row = 0; row < 3; row++) {
+        for (let column = 0; column < 3; column++) {
+            formattedBoard += board[row][column] || ' ';
+        }
+        if (row != 2) formattedBoard += '\n';
+    }
+
+    return formattedBoard;
 }
 
 function place(board, marker, row, column) {

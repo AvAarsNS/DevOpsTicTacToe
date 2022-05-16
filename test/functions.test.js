@@ -313,11 +313,9 @@ describe('We want to format the board:', () => {
     it('Format an empty board', () => {
         const board = createBoard();
         const formattedBoard = formatBoard(board);
-        expect(formattedBoard).toBe(' | | \n' + 
-                                    '-----\n' +
-                                    ' | | \n' + 
-                                    '-----\n' +
-                                    ' | | ');
+        expect(formattedBoard).toBe('   \n' + 
+                                    '   \n' + 
+                                    '   ');
     });
     it('Format UAT 3', () => {
         const board = createBoard();
@@ -325,10 +323,8 @@ describe('We want to format the board:', () => {
         board[1] = ['O', 'O', 'O'];
         board[2] = ['X', null, null];
         const formattedBoard = formatBoard(board);
-        expect(formattedBoard).toBe('X| |X\n' + 
-                                    '-----\n' +
-                                    'O|O|O\n' + 
-                                    '-----\n' +
-                                    'X| | ');
+        expect(formattedBoard).toBe('X X\n' + 
+                                    'OOO\n' + 
+                                    'X  ');
     });
 });
