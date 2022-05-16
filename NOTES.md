@@ -67,5 +67,10 @@ Then finally, be able to run the game
 ✔ Test with UAT 5
 
 We want to be able to format the board:
-- Test with UAT 3 (half full)
-- Test with UAT 5 (full)
+✔ Test with UAT 3 (half full)
+✔ Test with UAT 5 (full)
+
+Give next player:
+✴ No input: X
+- X: O
+- O: X

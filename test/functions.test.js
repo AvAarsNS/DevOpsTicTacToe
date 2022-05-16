@@ -1,4 +1,4 @@
-const {createBoard, formatBoard, place, detectWin, boardIsFull} = require('../src/functions');
+const {createBoard, formatBoard, place, detectWin, boardIsFull, nextPlayer} = require('../src/functions');
 
 describe('We start with an empty board', () => {
     it('We should be able to create... ', () => {
@@ -336,5 +336,11 @@ describe('We want to format the board:', () => {
         expect(formattedBoard).toBe('XOX\n' + 
                                     'OOX\n' + 
                                     'XXO');
+    });
+});
+
+describe('Select the next player:', () => {
+    it('No previous player: we select X', () => {
+        expect(nextPlayer(null)).toBe('X');
     });
 });

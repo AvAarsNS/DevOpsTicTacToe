@@ -54,10 +54,15 @@ function boardIsFull(board) {
     return true
 }
 
+function nextPlayer(previousPlayer) {
+
+}
+
 module.exports = {
     createBoard,
     formatBoard,
     place,
     detectWin,
-    boardIsFull
+    boardIsFull,
+    nextPlayer
 }
