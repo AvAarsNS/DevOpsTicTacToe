@@ -55,7 +55,7 @@ function boardIsFull(board) {
 }
 
 function nextPlayer(previousPlayer) {
-
+    return 'X';
 }
 
 module.exports = {

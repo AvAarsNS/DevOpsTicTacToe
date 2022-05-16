@@ -13,7 +13,7 @@ FNDA:3,formatBoard
 FNDA:69,place
 FNDA:35,detectWin
 FNDA:4,boardIsFull
-FNDA:1,nextPlayer
+FNDA:2,nextPlayer
 DA:2,30
 DA:8,3
 DA:10,3
@@ -38,9 +38,10 @@ DA:49,4
 DA:50,9
 DA:51,24
 DA:54,2
+DA:58,2
 DA:61,1
-LF:25
-LH:25
+LF:26
+LH:26
 BRDA:12,0,0,27
 BRDA:12,0,1,12
 BRDA:14,1,0,6

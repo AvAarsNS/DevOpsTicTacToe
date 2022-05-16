@@ -343,4 +343,7 @@ describe('Select the next player:', () => {
     it('No previous player: we select X', () => {
         expect(nextPlayer(null)).toBe('X');
     });
+    it('Previous player X: we select O', () => {
+        expect(nextPlayer('X')).toBe('O');
+    });
 });
