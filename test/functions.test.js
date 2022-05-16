@@ -27,4 +27,9 @@ describe('We want to be able to place Xes', () => {
         const boardAfterPlacing = placeX(board, 1);
         expect(boardAfterPlacing).toStrictEqual([[null,'X',null],[null,null,null],[null,null,null]])
     });
+    it('And finally in the bottom right', () => {
+        const board = createBoard();
+        const boardAfterPlacing = placeX(board, 1);
+        expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,null,null],[null,null,'X']])
+    });
 });
