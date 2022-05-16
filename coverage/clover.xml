@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652710710663" clover="3.2.0">
-  <project timestamp="1652710710663" name="All files">
+<coverage generated="1652710777716" clover="3.2.0">
+  <project timestamp="1652710777716" name="All files">
     <metrics statements="20" coveredstatements="20" conditionals="22" coveredconditionals="22" methods="5" coveredmethods="5" elements="47" coveredelements="47" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
     <file name="functions.js" path="C:\Users\Arthur.vanAarsse_nsp\Documents\TTT\DevOpsTicTacToe\src\functions.js">
       <metrics statements="20" coveredstatements="20" conditionals="22" coveredconditionals="22" methods="5" coveredmethods="5"/>
       <line num="2" count="28" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="16" count="60" type="stmt"/>
-      <line num="17" count="60" type="stmt"/>
+      <line num="16" count="69" type="stmt"/>
+      <line num="17" count="69" type="stmt"/>
       <line num="22" count="35" type="cond" truecount="5" falsecount="0"/>
       <line num="23" count="2" type="stmt"/>
       <line num="26" count="33" type="cond" truecount="5" falsecount="0"/>
@@ -20,9 +20,9 @@
       <line num="37" count="4" type="stmt"/>
       <line num="40" count="23" type="stmt"/>
       <line num="44" count="4" type="stmt"/>
-      <line num="45" count="7" type="stmt"/>
-      <line num="46" count="16" type="cond" truecount="2" falsecount="0"/>
-      <line num="49" count="1" type="stmt"/>
+      <line num="45" count="9" type="stmt"/>
+      <line num="46" count="24" type="cond" truecount="2" falsecount="0"/>
+      <line num="49" count="2" type="stmt"/>
       <line num="52" count="1" type="stmt"/>
     </file>
   </project>

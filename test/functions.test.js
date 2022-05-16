@@ -301,6 +301,17 @@ describe('Check for the UAT scenarios', () => {
     'XXO', () => {
         var board = createBoard();
 
+
+        board = place(board, 'X', 0, 0);
+        board = place(board, 'O', 0, 1);
+        board = place(board, 'X', 0, 2);
+        board = place(board, 'O', 1, 0);
+        board = place(board, 'O', 1, 1);
+        board = place(board, 'X', 1, 2);
+        board = place(board, 'X', 2, 0);
+        board = place(board, 'X', 2, 1);
+        board = place(board, 'O', 2, 2);
+
         expect(detectWin(board, 'O')).toBe(false);
         expect(detectWin(board, 'X')).toBe(false);
         expect(boardIsFull(board)).toBe(true);
