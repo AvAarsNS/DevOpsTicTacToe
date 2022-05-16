@@ -1,4 +1,4 @@
-const {createBoard, formatBoard, place, detectWin} = require('../src/functions');
+const {createBoard, formatBoard, place, detectWin, boardIsFull} = require('../src/functions');
 
 describe('We start with an empty board', () => {
     it('We should be able to create... ', () => {
@@ -202,8 +202,11 @@ describe('We want to detect diagonal wins:', () => {
     });
 });
 
-describe('Name of the group', () => {
-    
+describe('We want to check if all fields are filled:', () => {
+    it('Empty board: not filled', () => {
+        var board = createBoard();
+        expect(boardIsFull(board)).toBe(false);
+    });
 });
 
 describe('Check for the UAT scenarios', () => {

@@ -36,8 +36,11 @@ function detectWin(board, marker) {
         if (board[row][0] == marker && board[row][1] == marker && board[row][2] == marker)
             return true;
     }
-    
+
     return false
+}
+
+function boardIsFull(board) {
 }
 
 module.exports = {

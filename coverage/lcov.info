@@ -4,13 +4,15 @@ FN:1,createBoard
 FN:7,formatBoard
 FN:15,place
 FN:20,detectWin
-FNF:4
+FN:43,boardIsFull
+FNF:5
 FNH:4
-FNDA:24,createBoard
+FNDA:25,createBoard
 FNDA:1,formatBoard
 FNDA:60,place
 FNDA:33,detectWin
-DA:2,24
+FNDA:0,boardIsFull
+DA:2,25
 DA:8,1
 DA:16,60
 DA:17,60
@@ -25,7 +27,7 @@ DA:35,25
 DA:36,71
 DA:37,4
 DA:40,21
-DA:43,1
+DA:46,1
 LF:16
 LH:16
 BRDA:22,0,0,2
