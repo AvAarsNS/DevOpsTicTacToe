@@ -5,15 +5,6 @@ describe('We start with an empty board', () => {
         const board = createBoard();
         expect(board).toStrictEqual([[null,null,null],[null,null,null],[null,null,null]])
     });
-    it('and format!', () => {
-        const board = createBoard();
-        const formattedBoard = formatBoard(board);
-        expect(formattedBoard).toBe(' | | \n' + 
-                                    '-----\n' +
-                                    ' | | \n' + 
-                                    '-----\n' +
-                                    ' | | ');
-    });
 });
 
 describe('We want to be able to place Xes', () => {
@@ -315,5 +306,29 @@ describe('Check for the UAT scenarios', () => {
         expect(detectWin(board, 'O')).toBe(false);
         expect(detectWin(board, 'X')).toBe(false);
         expect(boardIsFull(board)).toBe(true);
+    });
+});
+
+describe('We want to format the board:', () => {
+    it('Format an empty board', () => {
+        const board = createBoard();
+        const formattedBoard = formatBoard(board);
+        expect(formattedBoard).toBe(' | | \n' + 
+                                    '-----\n' +
+                                    ' | | \n' + 
+                                    '-----\n' +
+                                    ' | | ');
+    });
+    it('Format UAT 3', () => {
+        const board = createBoard();
+        board[0] = ['X', null, 'X'];
+        board[1] = ['O', 'O', 'O'];
+        board[2] = ['X', null, null];
+        const formattedBoard = formatBoard(board);
+        expect(formattedBoard).toBe('X| |X\n' + 
+                                    '-----\n' +
+                                    'O|O|O\n' + 
+                                    '-----\n' +
+                                    'X| | ');
     });
 });

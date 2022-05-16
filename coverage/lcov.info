@@ -7,13 +7,13 @@ FN:20,detectWin
 FN:43,boardIsFull
 FNF:5
 FNH:5
-FNDA:28,createBoard
-FNDA:1,formatBoard
+FNDA:29,createBoard
+FNDA:2,formatBoard
 FNDA:69,place
 FNDA:35,detectWin
 FNDA:4,boardIsFull
-DA:2,28
-DA:8,1
+DA:2,29
+DA:8,2
 DA:16,69
 DA:17,69
 DA:22,35

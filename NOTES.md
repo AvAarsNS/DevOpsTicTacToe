@@ -64,8 +64,8 @@ Continue with the draw tests above, then be able to format the board with player
 Then be able to select the next player
 Then finally, be able to run the game
 
-- Test with UAT 5
+✔ Test with UAT 5
 
 We want to be able to format the board:
-- Test with UAT 3
-- Test with UAT 5
+- Test with UAT 3 (half full)
+- Test with UAT 5 (full)
