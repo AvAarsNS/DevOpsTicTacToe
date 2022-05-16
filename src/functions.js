@@ -17,7 +17,7 @@ function place(board, marker, row, column) {
     return board;
 }
 
-function detectWin(board) {
+function detectColumnWin(board) {
     return false;
 }
 
@@ -25,5 +25,5 @@ module.exports = {
     createBoard,
     formatBoard,
     place,
-    detectWin,
+    detectColumnWin,
 }

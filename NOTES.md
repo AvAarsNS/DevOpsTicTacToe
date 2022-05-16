@@ -19,7 +19,7 @@ And of course, we want to place some O's as well:
 Be able to detect column wins, with both players
 
 First we want to detect an X win in the first column:
-✴ One X: no win
-- Two Xes below eachother: No win
+✔ One X: no win
+✴ Two Xes below eachother: No win
 - Two Xes disconnected: No win
 - Three Xes below eachother: Win!

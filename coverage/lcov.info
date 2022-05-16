@@ -3,13 +3,13 @@ SF:src\functions.js
 FN:1,createBoard
 FN:7,formatBoard
 FN:15,place
-FN:20,detectWin
+FN:20,detectColumnWin
 FNF:4
 FNH:4
 FNDA:7,createBoard
 FNDA:1,formatBoard
 FNDA:5,place
-FNDA:1,detectWin
+FNDA:1,detectColumnWin
 DA:2,7
 DA:8,1
 DA:16,5
