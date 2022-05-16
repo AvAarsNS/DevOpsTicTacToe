@@ -294,4 +294,15 @@ describe('Check for the UAT scenarios', () => {
         expect(detectWin(board, 'O')).toBe(false);
         expect(detectWin(board, 'X')).toBe(true);
     });
+
+    it('With UAT scenario 5 the game should end in a draw:\n' + 
+    'XOX\n' +
+    'OOX\n' +
+    'XXO', () => {
+        var board = createBoard();
+
+        expect(detectWin(board, 'O')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
+        expect(boardIsFull(board)).toBe(true);
+    });
 });
