@@ -166,6 +166,19 @@ describe('Check for the UAT scenarios', () => {
     'XO-\n' +
     'X-O', () => {
         var board = createBoard();
+        board = place(board, 'X', 0, 0);
+        board = place(board, 'O', 1, 1);
+
+        expect(detectWin(board, 'O')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
+
+        board = place(board, 'X', 1, 0);
+        board = place(board, 'O', 2, 2);
+
+        expect(detectWin(board, 'O')).toBe(false);
+        expect(detectWin(board, 'X')).toBe(false);
+
+        board = place(board, 'X', 2, 0);
         expect(detectWin(board, 'O')).toBe(false);
         expect(detectWin(board, 'X')).toBe(true);
     });
