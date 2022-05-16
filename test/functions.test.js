@@ -19,17 +19,17 @@ describe('We start with an empty board', () => {
 describe('We want to be able to place Xes', () => {
     it('First in the top left', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 0);
+        const boardAfterPlacing = placeX(board, 0, 0);
         expect(boardAfterPlacing).toStrictEqual([['X',null,null],[null,null,null],[null,null,null]])
     });
     it('Then in the top center', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 1);
+        const boardAfterPlacing = placeX(board, 0, 1);
         expect(boardAfterPlacing).toStrictEqual([[null,'X',null],[null,null,null],[null,null,null]])
     });
     it('And finally in the bottom right', () => {
         const board = createBoard();
-        const boardAfterPlacing = placeX(board, 1);
+        const boardAfterPlacing = placeX(board, 2, 2);
         expect(boardAfterPlacing).toStrictEqual([[null,null,null],[null,null,null],[null,null,'X']])
     });
 });
