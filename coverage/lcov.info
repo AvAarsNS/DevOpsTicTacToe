@@ -11,7 +11,7 @@ FNDA:26,createBoard
 FNDA:1,formatBoard
 FNDA:60,place
 FNDA:33,detectWin
-FNDA:1,boardIsFull
+FNDA:2,boardIsFull
 DA:2,26
 DA:8,1
 DA:16,60
@@ -27,7 +27,7 @@ DA:35,25
 DA:36,71
 DA:37,4
 DA:40,21
-DA:44,1
+DA:44,2
 DA:47,1
 LF:17
 LH:17

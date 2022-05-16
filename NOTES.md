@@ -55,8 +55,8 @@ Then, we want to check the UAT 3 and 4:
 ✔ UAT 4
 
 To detect draws, we want to be able to detect if all fields are filled:
-✴ Empty board: not filled
-- Almost filled board: not filled
+✔ Empty board: not filled
+✔ Almost filled board: not filled
 - Filled board: yes!
 
 ## Final pomodoro:

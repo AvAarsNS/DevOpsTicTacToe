@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652709913654" clover="3.2.0">
-  <project timestamp="1652709913654" name="All files">
+<coverage generated="1652710360684" clover="3.2.0">
+  <project timestamp="1652710360684" name="All files">
     <metrics statements="17" coveredstatements="17" conditionals="20" coveredconditionals="20" methods="5" coveredmethods="5" elements="42" coveredelements="42" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="functions.js" path="C:\Users\Arthur.vanAarsse_nsp\Documents\TTT\DevOpsTicTacToe\src\functions.js">
       <metrics statements="17" coveredstatements="17" conditionals="20" coveredconditionals="20" methods="5" coveredmethods="5"/>
@@ -19,7 +19,7 @@
       <line num="36" count="71" type="cond" truecount="5" falsecount="0"/>
       <line num="37" count="4" type="stmt"/>
       <line num="40" count="21" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
       <line num="47" count="1" type="stmt"/>
     </file>
   </project>
