@@ -1,4 +1,4 @@
-const {createBoard, formatBoard} = require('../src/functions');
+const {createBoard, formatBoard, placeX} = require('../src/functions');
 
 describe('We start with an empty board', () => {
     it('We should be able to create... ', () => {
@@ -16,6 +16,10 @@ describe('We start with an empty board', () => {
     });
 });
 
-describe('Name of the group', () => {
-    
+describe('We want to be able to place Xes', () => {
+    it('First in the top left', () => {
+        const board = createBoard();
+        const boardAfterPlacing = placeX(board);
+        expect(boardAfterPlacing).toStrictEqual([['X',null,null],[null,null,null],[null,null,null]])
+    });
 });

@@ -12,7 +12,12 @@ function formatBoard(board) {
            ' | | '
 }
 
+function placeX(board) {
+    return board;
+}
+
 module.exports = {
     createBoard,
-    formatBoard
+    formatBoard,
+    placeX
 }
