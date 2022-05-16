@@ -58,6 +58,6 @@ describe('We want to be able to detect column wins', () => {
         var board = createBoard();
         board = place(board, 'X', 0, 0);
         board = place(board, 'X', 1, 0);
-        expect(detectColumnWin(board)).toBe(true);
+        expect(detectColumnWin(board)).toBe(false);
     });
 });
