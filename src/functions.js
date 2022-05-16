@@ -4,6 +4,11 @@ function createBoard() {
             [null, null, null]];
 }
 
+function formatBoard(board) {
+
+}
+
 module.exports = {
-    createBoard
+    createBoard,
+    formatBoard
 }
