@@ -224,4 +224,13 @@ describe('Check for the UAT scenarios', () => {
         expect(detectWin(board, 'O')).toBe(false);
         expect(detectWin(board, 'X')).toBe(true);
     });
+
+    it('With UAT scenario 3 O should win, and X should not:\n' + 
+    'X--\n' +
+    'XO-\n' +
+    'X-O', () => {
+        var board = createBoard();
+        expect(detectWin(board, 'O')).toBe(true);
+        expect(detectWin(board, 'X')).toBe(false);
+    });
 });
