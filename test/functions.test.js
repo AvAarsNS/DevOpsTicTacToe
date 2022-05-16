@@ -167,6 +167,16 @@ describe('We want to detect horizontal wins:', () => {
         board = place(board, 'X', 1, 2);
         expect(detectWin(board, 'X')).toBe(true);
     });
+    it('X wins when the board is:\n' + 
+       '---\n' +
+       '---\n' +
+       'OOO', () => {
+        var board = createBoard();
+        board = place(board, 'O', 2, 0);
+        board = place(board, 'O', 2, 1);
+        board = place(board, 'O', 2, 2);
+        expect(detectWin(board, 'O')).toBe(true);
+    });
 });
 
 describe('We want to detect diagonal wins:', () => {
