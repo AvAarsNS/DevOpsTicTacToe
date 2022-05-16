@@ -207,6 +207,10 @@ describe('We want to check if all fields are filled:', () => {
         var board = createBoard();
         expect(boardIsFull(board)).toBe(false);
     });
+    it('Almost filled board (only the center empty): not filled', () => {
+        var board = createBoard();
+        board[0] = ['X', 'O', 'X'];
+    });
 });
 
 describe('Check for the UAT scenarios', () => {
