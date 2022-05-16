@@ -18,7 +18,12 @@ function place(board, marker, row, column) {
 }
 
 function detectWin(board, marker) {
+    // Diagonal top left to bottom right
     if (board[0][0] == marker && board[1][1] == marker && board[2][2] == marker)
+        return true;
+        
+    // Diagonal bottom left to top right
+    if (board[0][2] == marker && board[1][1] == marker && board[2][0] == marker)
         return true;
 
     for (let column = 0; column < 3; column++) {
