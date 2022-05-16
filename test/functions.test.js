@@ -15,3 +15,7 @@ describe('We start with an empty board', () => {
                                     ' | | ');
     });
 });
+
+describe('Name of the group', () => {
+    
+});
